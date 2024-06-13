@@ -2,7 +2,8 @@
 using namespace std;
 
 void insert(vector<int> &v , int temp){
-
+    
+    // base case
     if( v.size()==0  ||  v[v.size()-1]<=temp){
         v.push_back(temp);
         return;
@@ -17,6 +18,7 @@ void insert(vector<int> &v , int temp){
 
 void sort(vector<int> &v){
 
+    // base case
     if(v.size() == 1)
         return;
 
